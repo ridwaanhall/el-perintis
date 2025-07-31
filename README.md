@@ -13,10 +13,10 @@ Proyek ini menggunakan Python untuk mensimulasikan dua filosofi tersebut, baik d
 
 ## 🌿 Branch Overview
 
-| Branch     | Filosofi        | Paradigma | Deskripsi Singkat |
-|------------|-----------------|-----------|--------------------|
-| `perintis` | Membangun dari nol | Non-OOP   | Skrip modular yang mensimulasikan ide, eksekusi, dan narasi perintis digital. |
-| `pewaris`  | Melanjutkan legacy | OOP       | Simulasi berbasis kelas (`Legacy`, `Pewaris`, `Simulator`) untuk menjaga dan mengembangkan warisan digital. |
+| Branch | Filosofi | Paradigma | Deskripsi Singkat |
+|--------|----------|-----------|-------------------|
+| [`perintis`](https://github.com/ridwaanhall/el-perintis/tree/perintis) | Membangun dari nol | Non-OOP | Skrip modular yang mensimulasikan ide, eksekusi, dan narasi perintis digital. |
+| [`pewaris`](https://github.com/ridwaanhall/el-perintis/tree/pewaris)   | Melanjutkan legacy | OOP | Simulasi berbasis kelas (`Legacy`, `Pewaris`, `Simulator`) untuk menjaga dan mengembangkan warisan digital. |
 
 ---
 
