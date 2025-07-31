@@ -1,35 +1,94 @@
-# el-perintis
+# 🔥 el-perintis
 
-> "Menjadi perintis adalah menulis takdir sendiri. Menjadi pewaris adalah menjaga bara yang telah menyala."
+> “Menjadi perintis adalah menulis takdir sendiri. Menjadi pewaris adalah menjaga bara yang telah menyala.” — Adaptasi filosofi Ryu Kintaro
 
-Repositori ini mengeksplorasi filosofi membangun dari nol (perintis) versus melanjutkan legacy (pewaris) melalui analogi kode Python, narasi perjuangan, dan API sederhana. Inspirasi diambil dari kisah viral seperti Ryu Kintaro, antara membangun jalan sendiri atau meneruskan jejak yang ada.
+Repositori ini mengeksplorasi dua jalur kehidupan digital:
 
-## Fitur
+- **Perintis**: membangun dari nol, penuh ketidakpastian dan eksplorasi.  
+- **Pewaris**: melanjutkan legacy yang sudah ada, dengan tantangan adaptasi dan keberlanjutan.
 
-- Simulasi OOP vs non-OOP: Analogi perintis (OOP, membangun fondasi baru) vs pewaris (non-OOP, melanjutkan pola lama).
-- Narasi perjuangan: Fungsi Python yang menggambarkan perjalanan, kegagalan, dan kemenangan.
-- API sederhana: Endpoint untuk menghasilkan narasi perjuangan secara dinamis.
+Proyek ini menggunakan Python untuk mensimulasikan dua filosofi tersebut, baik dalam bentuk skrip sederhana maupun pendekatan OOP yang terstruktur.
 
-## Struktur
+---
 
-- `src/`: Kode utama (simulasi, narasi, API)
-- `tests/`: Unit test untuk setiap modul
-- `requirements.txt`: Dependensi Python
+## 🌿 Branch Overview
 
-## Filosofi
+| Branch     | Filosofi        | Paradigma | Deskripsi Singkat |
+|------------|-----------------|-----------|--------------------|
+| `perintis` | Membangun dari nol | Non-OOP   | Skrip modular yang mensimulasikan ide, eksekusi, dan narasi perintis digital. |
+| `pewaris`  | Melanjutkan legacy | OOP       | Simulasi berbasis kelas (`Legacy`, `Pewaris`, `Simulator`) untuk menjaga dan mengembangkan warisan digital. |
 
-Setiap baris kode adalah pilihan: menulis ulang dunia atau memperbaiki warisan. Di dunia nyata, perintis dan pewaris saling melengkapi, seperti OOP dan non-OOP dalam pemrograman.
+---
 
-## Cara Menjalankan
+## 🧩 Fitur Utama
+
+- 🔀 Simulasi ide dan hasil (sukses, gagal, viral, pivot)
+- 📖 Narasi reflektif berdasarkan hasil eksekusi
+- 📝 Logging otomatis ke file (`log_perintis.txt` / `log_pewaris.txt`)
+- 🧪 Unit test untuk validasi alur
+- 🧠 Filosofi hidup digital: membangun vs melanjutkan
+
+---
+
+## 📁 Struktur Umum
+
+```txt
+el-perintis/
+├── src/
+│   ├── [perintis] run_ryu.py, ide.py, eksekusi.py, narasi.py, log.py
+│   ├── [pewaris] legacy.py, pewaris.py, simulator.py, run.py
+├── tests/
+│   ├── test_perintis.py
+│   ├── test_pewaris.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🚀 Cara Menjalankan
+
+### Branch `perintis`
 
 ```bash
-pip install -r requirements.txt
-python src/oop_vs_non_oop.py
-python src/perjuangan.py
-uvicorn src.api:app --reload
+git checkout perintis
 python src/run_ryu.py
 ```
 
-## Kontribusi
+### Branch `pewaris`
 
-Buka PR untuk menambah narasi, analogi, atau memperluas API. Mari berdiskusi: mana yang lebih berat, membangun dari nol atau menjaga warisan?
+```bash
+git checkout pewaris
+python src/run.py
+```
+
+---
+
+## 🧪 Testing
+
+```bash
+python -m tests.test_perintis     # Untuk perintis
+python -m tests.test_pewaris      # Untuk pewaris
+```
+
+---
+
+## 🔮 Potensi Pengembangan
+
+- 🌐 Integrasi dengan API Flask untuk narasi dinamis
+- 📊 Visualisasi narasi perintis vs pewaris di dashboard
+- 🧑‍🤝‍🧑 Mode komunitas: pengguna bisa menyumbang ide atau warisan
+- 🧭 Refleksi harian: motivasi dan log perjalanan digital
+
+---
+
+## 📜 Lisensi
+
+MIT License. Bebas digunakan, dimodifikasi, dan dikembangkan.
+
+---
+
+## 🤝 Kontribusi
+
+Buka PR untuk menambah narasi, analogi, atau memperluas simulasi.  
+Mari berdiskusi: mana yang lebih berat, membangun dari nol atau menjaga warisan?
