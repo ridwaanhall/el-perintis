@@ -53,7 +53,7 @@ Setiap eksekusi akan menghasilkan satu narasi perintis dan mencatatnya ke `log_p
 ## 🧪 Testing
 
 ```bash
-python tests/test_simulasi.py
+python3 -m tests.test_simulasi # python tests/test_simulasi.py
 ```
 
 ---

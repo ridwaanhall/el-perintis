@@ -1,6 +1,6 @@
-from ide import ambil_ide
-from eksekusi import eksekusi
-from narasi import buat_narasi
+from src.ide import ambil_ide
+from src.eksekusi import eksekusi
+from src.narasi import buat_narasi
 
 def test_simulasi():
     ide = ambil_ide()
