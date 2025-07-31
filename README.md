@@ -27,6 +27,7 @@ pip install -r requirements.txt
 python src/oop_vs_non_oop.py
 python src/perjuangan.py
 uvicorn src.api:app --reload
+python src/run_ryu.py
 ```
 
 ## Kontribusi
