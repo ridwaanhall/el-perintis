@@ -1,39 +1,41 @@
-# 🚀 el-perintis
+# 🔥 el-pewaris-oop
 
-_Simulasi hidup sebagai perintis digital, terinspirasi dari filosofi Ryu Kintaro._
+_Melanjutkan jejak, menjaga bara, dan memperkuat warisan digital dengan pendekatan OOP._
 
-> “Yang paling seru itu justru hidup sebagai perintis. Nggak ada yang nunjukin arah, nggak ada yang ngejamin hasil.” — Ryu Kintaro
+> “Menjadi perintis adalah menulis takdir sendiri. Menjadi pewaris adalah menjaga bara yang telah menyala.” — Adaptasi filosofi Ryu Kintaro
 
 ---
 
-## 🎯 Tujuan
+## 🎯 Deskripsi Proyek
 
-**el-perintis** adalah skrip Python yang mensimulasikan perjalanan seorang perintis: mulai dari ide mentah, eksekusi, kegagalan, pivot, hingga potensi viral. Cocok untuk refleksi harian, konten motivasi, atau sebagai fondasi proyek digital yang lebih besar.
+**el-pewaris-oop** adalah simulasi berbasis Python yang menggambarkan perjalanan seorang pewaris digital. Proyek ini menggunakan paradigma **Object-Oriented Programming (OOP)** untuk merepresentasikan entitas seperti `Legacy`, `Pewaris`, dan `Simulator`, serta interaksi di antara mereka.
+
+Tujuannya adalah untuk mengeksplorasi bagaimana seseorang dapat melanjutkan dan mengembangkan warisan digital—baik itu proyek open source, platform edukasi, atau konten viral—dengan tantangan dan narasi yang reflektif.
 
 ---
 
 ## 🧩 Fitur Utama
 
-- 🔀 Randomisasi ide bisnis perintis
-- ⚙️ Simulasi eksekusi dengan hasil dinamis (sukses, gagal, viral, pivot)
-- 📖 Narasi reflektif berdasarkan hasil
-- 📝 Logging otomatis ke `log_perintis.txt`
-- 🧪 Unit test sederhana untuk validasi alur
+- 📜 Representasi warisan digital (`Legacy`) dengan tantangan spesifik
+- 🧑‍🔧 Pewaris (`Pewaris`) yang mencoba mengadaptasi dan mengembangkan warisan
+- 🎬 Simulator (`Simulator`) yang menjalankan proses pewarisan dan mencatat hasil
+- 📖 Narasi reflektif berdasarkan hasil adaptasi
+- 📝 Logging otomatis ke `log_pewaris.txt`
+- 🧪 Unit test untuk validasi alur pewarisan
 
 ---
 
-## 📁 Struktur Proyek
+## 📁 Struktur Folder
 
 ```txt
-el-perintis/
+el-pewaris-oop/
 ├── src/
-│   ├── ide.py           # Generator ide bisnis
-│   ├── eksekusi.py      # Simulasi eksekusi ide
-│   ├── narasi.py        # Narasi berdasarkan hasil
-│   ├── log.py           # Logging ke file
-│   └── run_ryu.py       # Entry point utama
+│   ├── legacy.py        # Class Legacy: warisan digital
+│   ├── pewaris.py       # Class Pewaris: pewaris yang mengadaptasi legacy
+│   ├── simulator.py     # Class Simulator: menjalankan simulasi pewarisan
+│   └── run.py           # Entry point utama
 ├── tests/
-│   └── test_simulasi.py # Unit test sederhana
+│   └── test_pewaris.py  # Unit test
 ├── README.md
 └── requirements.txt
 ```
@@ -43,33 +45,35 @@ el-perintis/
 ## 🚀 Cara Menjalankan
 
 ```bash
-python src/run_ryu.py
+python src/run.py
 ```
 
-Setiap eksekusi akan menghasilkan satu narasi perintis dan mencatatnya ke `log_perintis.txt`.
+Setiap eksekusi akan menghasilkan satu narasi pewaris dan mencatatnya ke `log_pewaris.txt`.
 
 ---
 
 ## 🧪 Testing
 
 ```bash
-python3 -m tests.test_simulasi # python tests/test_simulasi.py
+python tests/test_pewaris.py # python -m tests.test_pewaris
 ```
+
+---
+
+## 🧠 Filosofi OOP
+
+- **Encapsulation**: Setiap entitas (`Legacy`, `Pewaris`, `Simulator`) memiliki atribut dan perilaku yang terpisah dan terstruktur.
+- **Abstraction**: Detail implementasi disembunyikan di balik antarmuka kelas.
+- **Inheritance**: Konsep pewarisan literal dan metaforis—kelas `Pewaris` mewarisi tantangan dari `Legacy`.
+- **Polymorphism**: Narasi dan hasil adaptasi dapat bervariasi tergantung konteks warisan.
 
 ---
 
 ## 🔮 Potensi Pengembangan
 
-- CLI interaktif dengan `argparse`
-- Integrasi dengan API motivasi harian
-- Dashboard web dengan Flask atau Django
-- Mode komunitas: simpan ide dan narasi dari banyak pengguna
-
----
-
-## 🧠 Filosofi
-
-Proyek ini bukan sekadar skrip—ini adalah refleksi digital atas semangat perintis. Tidak ada jaminan, tidak ada arahan, tapi ada keberanian untuk mencoba dan mencatat prosesnya.
+- 🌐 Integrasi dengan API Flask untuk menyajikan narasi secara dinamis
+- 📊 Visualisasi narasi pewaris vs perintis di dashboard `roneha.dev`
+- 🧠 Mode reflektif: pengguna bisa menulis ulang narasi berdasarkan pengalaman pribadi
 
 ---
 
@@ -81,4 +85,4 @@ MIT License. Bebas digunakan, dimodifikasi, dan dikembangkan.
 
 ## 🤝 Kontribusi
 
-Terbuka untuk kontribusi! Kirim ide, narasi, atau fitur baru yang bisa memperkaya semangat perintis digital.
+Buka PR untuk menambah narasi, analogi, atau memperluas simulasi. Mari berdiskusi: mana yang lebih berat, membangun dari nol atau menjaga warisan?
